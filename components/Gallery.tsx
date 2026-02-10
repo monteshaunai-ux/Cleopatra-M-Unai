@@ -14,9 +14,9 @@ const Gallery: React.FC = () => {
       desc: 'Minyak masak, tepung, dan gula merupakan antara barangan wajib yang disusun rapi dalam setiap Bakul Makanan.'
     },
     {
-      url: 'https://images.unsplash.com/photo-1594910413528-9430d89e9086?q=80&w=2070&auto=format&fit=crop',
-      title: 'Barangan Kering & Tin',
-      desc: 'Pilihan makanan dalam tin dan barangan kering yang tahan lama untuk memudahkan penyimpanan oleh penerima bantuan.'
+      url: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=2070&auto=format&fit=crop',
+      title: 'Pek Barangan Kering',
+      desc: 'Himpunan barangan keperluan seperti serbuk kopi, biskut, makanan bertin dan sos yang lengkap untuk kegunaan harian keluarga.'
     },
     {
       url: 'https://images.unsplash.com/photo-1584263347416-85a696b4eda7?q=80&w=2070&auto=format&fit=crop',
@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
       desc: 'Stok bekalan diuruskan secara sistematik di Pusat Khidmat Rakyat bagi memastikan agihan yang pantas dan efisien.'
     },
     {
-      url: 'https://images.unsplash.com/photo-1591189863430-ab87e120f312?q=80&w=2070&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1621275471769-e6aa344546d5?q=80&w=2073&auto=format&fit=crop',
       title: 'Pek Kasih Sayang',
       desc: 'Setiap bungkusan disediakan dengan penuh keprihatinan demi menjaga maruah dan kesejahteraan setiap penerima.'
     },
@@ -37,7 +37,6 @@ const Gallery: React.FC = () => {
 
   const [selectedImage, setSelectedImage] = useState<typeof images[0] | null>(null);
 
-  // Prevent body scroll when modal is open
   useEffect(() => {
     if (selectedImage) {
       document.body.style.overflow = 'hidden';
@@ -86,7 +85,6 @@ const Gallery: React.FC = () => {
           ))}
         </div>
 
-        {/* Modal Overlay */}
         {selectedImage && (
           <div 
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 bg-slate-950/90 backdrop-blur-sm transition-all duration-300 animate-in fade-in"
