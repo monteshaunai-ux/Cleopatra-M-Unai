@@ -1,0 +1,7 @@
+{
+  "name": "P172 Kota Kinabalu Food Aid Portal",
+  "description": "Official registration portal for food basket aid for the P172 Kota Kinabalu constituency, covering Likas, Api-Api, and Luyang.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
